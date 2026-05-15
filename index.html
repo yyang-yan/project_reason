@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Four Seasons</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .icon-box {
+      width: 80px;
+      height: 80px;
+      background-color: #0d6efd;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .icon-box img {
+      filter: brightness(0) invert(1);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 导航栏 -->
+  <nav class="navbar navbar-expand-lg bg-white">
+    <div class="container px-0">
+      <a class="navbar-brand me-5" href="#">
+        <img src="https://cdn-icons-png.flaticon.com/512/3059/3059978.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
+        Four Seasons
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Seasons
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Spring</a></li>
+              <li><a class="dropdown-item" href="#">Summer</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Autumn</a></li>
+              <li><a class="dropdown-item" href="#">Winter</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search season..." aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 主内容 -->
+  <div class="px-4 py-5 my-5 text-center">
+    <h1 class="display-1 fw-bold mb-4">Beautiful Four Seasons</h1>
+    <div class="col-lg-6 mx-auto">
+      <p class="lead mb-4 text-muted">
+        Experience the magic of nature throughout the year. From blooming spring flowers to snowy winter landscapes, each season brings its unique beauty and charm. Explore and enjoy the wonderful scenery that nature has to offer.
+      </p>
+      <div class="d-flex justify-content-center gap-3 mb-5">
+        <button type="button" class="btn btn-primary btn-lg">Explore Now</button>
+        <button type="button" class="btn btn-outline-secondary btn-lg">View Gallery</button>
+      </div>
+      <img src="./seasons.jpeg" class="img-fluid rounded shadow-lg" alt="Four seasons scenery">
+    </div>
+  </div>
+
+  <!-- 三列特色 -->
+  <div class="container py-5">
+    <h2 class="pb-3 border-bottom mb-5">Why Enjoy The Seasons?</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="icon-box mb-3">
+          <img src="https://cdn-icons-png.flaticon.com/512/5444/5444561.png" alt="" width="32" height="32">
+        </div>
+        <h3>Natural Beauty</h3>
+        <p>Every season showcases stunning natural scenery, from fresh green leaves in spring to golden foliage in autumn. The world transforms into a picturesque landscape that calms the mind and refreshes the soul.</p>
+        <a href="#" class="text-primary text-decoration-none">Learn more <img src="https://cdn-icons-png.flaticon.com/512/2712/2712271.png" alt="" width="16"></a>
+      </div>
+
+      <div class="col-md-4">
+        <div class="icon-box mb-3">
+          <img src="https://cdn-icons-png.flaticon.com/512/5229/5229894.png" alt="" width="32" height="32">
+        </div>
+        <h3>Unique Experiences</h3>
+        <p>Each season offers special activities and moments: hiking in spring, swimming in summer, harvesting in autumn, and skiing in winter. Create unforgettable memories all year round.</p>
+        <a href="#" class="text-primary text-decoration-none">Learn more <img src="https://cdn-icons-png.flaticon.com/512/2712/2712271.png" alt="" width="16"></a>
+      </div>
+
+      <div class="col-md-4">
+        <div class="icon-box mb-3">
+          <img src="https://cdn-icons-png.flaticon.com/512/4161/4164301.png" alt="" width="32" height="32">
+        </div>
+        <h3>Peace & Relaxation</h3>
+        <p>Immerse yourself in the peaceful atmosphere of changing seasons. Nature's rhythm helps reduce stress, improve wellbeing, and bring balance to your busy daily life.</p>
+        <a href="#" class="text-primary text-decoration-none">Learn more <img src="https://cdn-icons-png.flaticon.com/512/2712/2712271.png" alt="" width="16"></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 轮播图：四季风景 -->
+  <div class="container py-5">
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./spring.jpeg" class="d-block w-100 rounded" alt="Spring">
+        </div>
+        <div class="carousel-item">
+          <img src="./summer.jpeg" class="d-block w-100 rounded" alt="Summer">
+        </div>
+        <div class="carousel-item">
+          <img src="./autumn.jpeg" class="d-block w-100 rounded" alt="Autumn">
+        </div>
+        <div class="carousel-item">
+          <img src="./winter.jpeg" class="d-block w-100 rounded" alt="Winter">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </div>
+
+  <!-- 页脚 -->
+  <footer class="container py-5 border-top">
+    <div class="row">
+      <div class="col-12 col-md-3 mb-3">
+        <span class="text-muted">© 2026 Four Seasons</span>
+      </div>
+      <div class="col-4 col-md-3 mb-3">
+        <h5>Seasons</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Spring</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Summer</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Autumn</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Winter</a></li>
+        </ul>
+      </div>
+      <div class="col-4 col-md-3 mb-3">
+        <h5>Gallery</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Photos</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Videos</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Wallpapers</a></li>
+        </ul>
+      </div>
+      <div class="col-4 col-md-3 mb-3">
+        <h5>About</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Nature</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Blog</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
